@@ -69,13 +69,13 @@ def get_response(user_input):
     return response['answer']
 
 # app config
-st.set_page_config(page_title="Ask About Dez", page_icon="🤖")
-st.title("Chat with Dez AI")
+st.set_page_config(page_title="Ask About Dez", page_icon="🚀")
+st.title("Chat with Dez AI Assistant 🤖")
 
 # sidebar
 with st.sidebar:
     #st.header("Settings")
-    st.header("Settings")
+    st.header("Ask 🤖 About Dez 🚀")
     #Website URL
     #website_url = st.text_input("Website URL")
     website_url = "https://raw.githubusercontent.com/dnzengou/chat-with-my-website/main/docs/dez-content_2024_en.txt"
