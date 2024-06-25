@@ -78,16 +78,18 @@ with st.sidebar:
     st.header("Ask 🤖 About Dez 🚀")
     #Website URL
     #website_url = st.text_input("Website URL")
-    website_url = "https://raw.githubusercontent.com/dnzengou/chat-with-my-website/main/docs/dez-content_2024_en.txt"
+    # dez content: https://raw.githubusercontent.com/dnzengou/chat-with-my-website/main/docs/dez-content_2024_en.txt
+    website_url = "https://raw.githubusercontent.com/dnzengou/chat-with-url/main/docs/tokenomics-data_062024.txt"
 
 if website_url is None or website_url == "":
     st.info("Please enter a website URL")
 
 else:
     # session state
+    # "Hello, I am an AI chatbot. Ask about Désiré and Desired Solutions, his company!"
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = [
-            AIMessage(content="Hello, I am an AI chatbot. Ask about Désiré and Desired Solutions, his company!"),
+            AIMessage(content="Hello 👋🏾 I am an Dez chatbot. Ask about everything crypto token & economics a.k.a tokenomics!"),
         ]
     if "vector_store" not in st.session_state:
         st.session_state.vector_store = get_vectorstore_from_url(website_url)    
